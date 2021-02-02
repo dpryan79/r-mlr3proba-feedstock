@@ -1,4 +1,4 @@
-{% set version = '0.2.6' %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3proba_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3proba/mlr3proba_{{ version }}.tar.gz
-  sha256: 5aff6b54ebfa26500d7a2739be01ef0c99ecffb6edecd425e996011c51dee6c5
+  sha256: 3f53a2bb0444bb2a153b80761d3b6138d5ac87ce7c06c1eafaf207a405c4291c
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -63,13 +63,10 @@ test:
 about:
   home: https://mlr3proba.mlr-org.com, https://github.com/mlr-org/mlr3proba
   license: LGPL-3.0-only
-  summary: Provides extensions for probabilistic supervised learning for 'mlr3'.  This includes
-    extending the regression task to probabilistic and interval regression, adding a
-    survival task, and other specialized models, predictions, and measures. mlr3extralearners
-    is available from <https://github.com/mlr-org/mlr3extralearners>.
+  summary: Provides extensions for probabilistic supervised learning for 'mlr3'.  This includes extending the regression task to probabilistic and interval regression, adding a survival task, and other specialized models, predictions, and measures. mlr3extralearners is available from <https://github.com/mlr-org/mlr3extralearners>.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
 
 extra:
   recipe-maintainers:
