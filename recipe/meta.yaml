@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3proba_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3proba/mlr3proba_{{ version }}.tar.gz
-  sha256: eee653cdda379a68fc86e6bb4c88c82e9d4cb1b118b1a5b9af7a75e4fb62f5e9
+  sha256: a8ee60e2a5a743997f7cad1fc064beb721048dd60bac96a77f9f91ef178c06df
 
 build:
   merge_build_host: true  # [win]
@@ -37,9 +37,9 @@ requirements:
     - r-rcpp >=1.0.4
     - r-checkmate
     - r-data.table
-    - r-distr6 >=1.4.5
-    - r-mlr3 >=0.6.0
-    - r-mlr3misc >=0.1.7
+    - r-distr6 >=1.6.0
+    - r-mlr3 >=0.12.0
+    - r-mlr3misc >=0.7.0
     - r-paradox >=0.1.0
     - r-survival
   run:
@@ -49,9 +49,9 @@ requirements:
     - r-rcpp >=1.0.4
     - r-checkmate
     - r-data.table
-    - r-distr6 >=1.4.5
-    - r-mlr3 >=0.6.0
-    - r-mlr3misc >=0.1.7
+    - r-distr6 >=1.6.0
+    - r-mlr3 >=0.12.0
+    - r-mlr3misc >=0.7.0
     - r-paradox >=0.1.0
     - r-survival
 
