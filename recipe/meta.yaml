@@ -1,4 +1,4 @@
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3proba_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3proba/mlr3proba_{{ version }}.tar.gz
-  sha256: 2c36e56dc5d6825472705e5cc0b79939bf4161c4b646bb81ed25d806cd523cbe
+  sha256: b1dafdb990f75b729d6bbb6064f4e877357ccb4ec1f872968eef2abcab69d70f
 
 build:
   merge_build_host: true  # [win]
