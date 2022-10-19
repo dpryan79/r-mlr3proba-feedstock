@@ -37,7 +37,7 @@ requirements:
     - r-rcpp >=1.0.4
     - r-checkmate
     - r-data.table
-    - r-distr6 >=1.6.8
+    - r-distr6 >=1.6.9
     - r-mlr3 >=0.13.3
     - r-mlr3misc >=0.7.0
     - r-paradox >=0.1.0
@@ -50,7 +50,7 @@ requirements:
     - r-rcpp >=1.0.4
     - r-checkmate
     - r-data.table
-    - r-distr6 >=1.6.8
+    - r-distr6 >=1.6.9
     - r-mlr3 >=0.13.3
     - r-mlr3misc >=0.7.0
     - r-paradox >=0.1.0
